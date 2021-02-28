@@ -1,6 +1,7 @@
 import '../styles/global.css';
 import { ChallengesProvider } from '../contexts/ChallengeContext'
 import { useState } from 'react';
+import { CountdownProvider } from '../contexts/CountdownContext';
 
 function MyApp({ Component, pageProps }) {
 
@@ -8,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     <ChallengesProvider>
       <Component {...pageProps} />
     </ChallengesProvider>
-    
+
   )
 }
 
